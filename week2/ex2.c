@@ -9,5 +9,5 @@ int main(){
 
     printf("%s\n", strrev(input));
 
-    return 1;
+    return 0;
 }

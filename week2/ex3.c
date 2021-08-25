@@ -24,5 +24,5 @@ int main(){
 
     print_figure(n);
 
-    return 1;
+    return 0;
 }

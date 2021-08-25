@@ -22,5 +22,5 @@ int main(){
 
     printf("Number after swap: first - %d, second - %d", first, second);
 
-    return 1;
+    return 0;
 }

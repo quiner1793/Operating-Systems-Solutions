@@ -83,5 +83,5 @@ int main()
             printf("Invalid figure type");
     }
 
-    return 1;
+    return 0;
 }
