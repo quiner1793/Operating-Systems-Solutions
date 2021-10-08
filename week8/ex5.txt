@@ -1,0 +1,2 @@
+Virtual address can exceed bounds of real addresses and should be mapped to real addresses, while the physical address 
+has a one to one correspondence with real addresses

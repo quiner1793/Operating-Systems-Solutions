@@ -1,0 +1,2 @@
+2^16 - in virtual memory. 2^13 - bits per one page. We get 2^16 / 2^13 = 2^3 entities in page table.
+Answer: 8
