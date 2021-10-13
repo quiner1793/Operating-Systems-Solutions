@@ -1,0 +1,4 @@
+The biggest hit/miss ratio is when the same references to page are very close to each other
+in reference sequence. For example: 1 2 1 2 2 3 4 3 4 3.
+The smallest hit/miss ration is when the same references to page are very far from each other
+in reference sequence. For example: 1 2 3 4 5 1 2 3 4 5.
