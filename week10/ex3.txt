@@ -1,0 +1,6 @@
+-rw-rw-r-- 1 quiner quiner 2 окт 26 01:21 _ex3.txt
+-rwx---rwx 1 quiner quiner 2 окт 26 01:21 _ex3.txt
+-rwxrwxrwx 1 quiner quiner 2 окт 26 01:21 _ex3.txt
+660 mean only read and write for user and group
+775 mean read, write and execute for user and group; read and execute for others
+777 mean read, write and execute for user, group and others
