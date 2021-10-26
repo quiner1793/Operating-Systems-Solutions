@@ -26,6 +26,9 @@ int main(){
     }
 
     while( (entry=readdir(folder)) ){
+    	if (!strcmp(entry->d_name, ".") || !strcmp(entry->d_name, "..")){
+    		continue;
+    	}
         if (stat(entry->d_name, &file_stat) < 0){
             perror("Unable to get file stat");
             return(1);
@@ -36,19 +39,23 @@ int main(){
 
         arr_size++;
     }
+    FILE* f = fopen("ex4.txt", "w");
+    fprintf(f,"FILE -- Hard Links\n");
 
     for (int i = 0; i < arr_size; i++){
         if (folder_entries[i].hard_links_num > 1){
             int cur_i_node = folder_entries[i].i_node_num;
-            printf("%s --- ", folder_entries[i].file_name);
+            fprintf(f,"%s --- ", folder_entries[i].file_name);
             for (int j = 0; j < arr_size; j++){
                 if(folder_entries[j].i_node_num == cur_i_node){
-                    printf("%s  ", folder_entries[j].file_name);
+                    fprintf(f,"%s  ", folder_entries[j].file_name);
                 }
             }
-            printf("\n");
+            fprintf(f, "\n");
         }
     }
+
+    fclose(f);
 
     return 0;
 }
