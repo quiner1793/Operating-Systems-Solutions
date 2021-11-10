@@ -1,0 +1,3 @@
+1) Deadlock prevention: we use it when we want to be sure that there would be no deadlocks during the processes runtime, and the CPU can just focus on a given job
+2) Deadlock avoidance: the mechanism works during the runtime checking that the system does not enter an unsafe state. The advantage is that we do not need to analyze anything before running the job as it can be very complicated
+3) Deadlock recovery: the detection algorithm becomes very simple as we do not look in the future to check if the unsafe state can be reached; we just do journaling and a rollback (or another recovery technique) to recover from occurred deadlock
